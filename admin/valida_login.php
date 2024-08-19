@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $usuarios_authenticado = false;
 
   $usuarios_app = array(
@@ -14,10 +16,13 @@ $usuarios_authenticado = false;
   };
 
   if($usuarios_authenticado){
-    echo 'Usuário autenticado com sucesso!';
+    //echo 'Usuário autenticado com sucesso!';
+    $_SESSION['authenticado'] = 'SIM';
+    header('Location:home.php');
   }else{
     //echo 'Erro de Autenticação!';
-    header('Location: index.php?login=erro');
+    $_SESSION['authenticado'] = 'NAO';
+    header('Location:index.php?login=erro');
   };
 
 ?>

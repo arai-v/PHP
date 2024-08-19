@@ -47,11 +47,22 @@
                  if(isset($_GET['login']) && $_GET['login'] == 'erro'){
                 ?>
                 <div class="text-danger">
-                  Usuário ou senha inválido
+                  Usuário ou senha inválido!
                 </div>
                 <?php 
                  };
                 ?>
+
+                <?php 
+                 if(isset($_GET['login']) && $_GET['login'] == 'erro2'){
+                ?>
+                <div class="text-danger">
+                  Faça LOGIN antes de acesar as paginas protegidas
+                </div>
+                <?php 
+                 };
+                ?>
+
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
             </div>
