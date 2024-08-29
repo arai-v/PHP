@@ -1,5 +1,5 @@
 <?php
- require_once "validador_acesso.php"
+  require_once "validador_acesso.php"
 ?>
 
 <?php
@@ -7,8 +7,8 @@
 
   $arquivo = fopen('arquivo.txt', 'r'); //r = read
 
-  while(!feof($arquivo)){ //feof (File End of File) = lê tudo
-    $registro = fgets($arquivo); //fgets = retorna a linha
+  while(!feof($arquivo)){ //feof (File End Of File) = Lê tudo
+    $registro = fgets($arquivo); //fgets = Retorna a linha
 
     $chamados[] = $registro;
   }
@@ -39,10 +39,11 @@
         <img src="../assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
-      <ul class="nav-bar">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a href="logoff.php" class="nav-link">SAIR</a>
         </li>
+      </ul>
     </nav>
 
     <div class="container">    
@@ -55,10 +56,10 @@
             </div>
             
             <div class="card-body">
-
+                  
               <?php 
                 foreach($chamados as $chamado){
-
+                  
                 $chamado_dados = explode('#', $chamado);
 
                 if($_SESSION['perfil_id'] == 2){
@@ -71,7 +72,7 @@
                   continue;
                 }
               ?>
-
+              
               <div class="card mb-3 bg-light">
                 <div class="card-body">
                   <h5 class="card-title"><?= $chamado_dados[1]; ?></h5>
@@ -80,11 +81,11 @@
                 </div>
               </div>
 
-              <?php }?>
+              <?php };?>
 
               <div class="row mt-5">
                 <div class="col-6">
-                  <a href="home.php" class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button></a>
+                  <a href="home.php" class="btn btn-lg btn-warning btn-block">Voltar</a>
                 </div>
               </div>
             </div>

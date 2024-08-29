@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help Desk</title>
-    
+
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     
     <style>
@@ -35,7 +35,7 @@
               Login
             </div>
             <div class="card-body">
-              <form action= "valida_login.php" method="post">
+              <form action="valida_login.php" method="post">
                 <div class="form-group">
                   <input name="email" type="email" class="form-control" placeholder="E-mail">
                 </div>
@@ -46,19 +46,27 @@
                 <?php
                   if(isset($_GET['login']) && $_GET['login'] == 'erro'){
                 ?>
-                  <div class="text-danger">Usuário ou senha inválido!!!</div>
+
+                  <div class="text-danger">
+                    Usuário ou senha inválido!
+                  </div>
+
                 <?php
-                };
+                  };
                 ?>
 
                 <?php
                   if(isset($_GET['login']) && $_GET['login'] == 'erro2'){
                 ?>
-                  <div class="text-danger">Faça LOGIN antes de acessar as páginas protegidas</div>
+
+                  <div class="text-danger">
+                    Faça LOGIN antes de acessar as páginas protegidas
+                  </div>
+
                 <?php
-                };
+                  };
                 ?>
-                
+
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
             </div>

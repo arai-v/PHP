@@ -1,7 +1,6 @@
 <?php
   require_once "validador_acesso.php"
 ?>
-
 <html>
   <head>
     <meta charset="utf-8" />
@@ -25,7 +24,7 @@
         <img src="../assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
-      <ul class="nav-bar">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a href="logoff.php" class="nav-link">SAIR</a>
         </li>

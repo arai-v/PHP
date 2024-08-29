@@ -8,19 +8,19 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-        </li>
+        </li>     
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Menu
+            Menu
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Banner</a></li>
+            <li><a class="dropdown-item" href="pgBanner.php">Banner</a></li>
             <li><a class="dropdown-item" href="pgCardapio.php">Cardápio</a></li>
-            <li><a class="dropdown-item" href="#">Pratos</a></li>
+            <li><a class="dropdown-item" href="pgPrato.php">Pratos</a></li>
             <li><a class="dropdown-item" href="#">Sobre</a></li>
           </ul>
-        </li>
+        </li>   
       </ul>
     </div>
   </div>
-</nav>  
+</nav>
